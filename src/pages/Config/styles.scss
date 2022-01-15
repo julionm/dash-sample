@@ -1,0 +1,9 @@
+@import '/src/shared/globals.scss';
+
+.config-content {
+
+    @extend .page-content;
+
+    background: red;
+
+}
