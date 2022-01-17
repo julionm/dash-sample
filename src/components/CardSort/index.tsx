@@ -9,7 +9,7 @@ export function CardSort() {
     return savedlist !== null ? JSON.parse(savedlist) : [];
   });
 
-  let id: number = 0;
+  let id = 0; // id usado para identificar cada um dos cards
   let heldItem: HTMLElement;
 
   function dragStart(e: any) {
