@@ -9,7 +9,7 @@ export function Card({ id, title }: CardProps) {
 
     return (
         <div className="component">
-            <span>{title} {id}</span>
+            <span>{title}</span>
             <div className="chart"></div>
         </div>
     );

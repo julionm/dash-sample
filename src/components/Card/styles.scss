@@ -1,14 +1,24 @@
+@import '/src/shared/styles/globals.scss';
+
 .component {
     border-radius: 20px;
-    background: white;
+    background: $thistle;
     padding: 10px;
 
-    border: 1px solid black;
+    box-shadow: 2px 2px 2px $prussian-blue,
+                -2px 0px 2px $prussian-blue;
+
+    transition: .3s;
 
     .chart {
         width: 200px;
         height: 200px;
+    }
 
-        background: aqua;
+    &:hover {
+        transform: scale(1.01);
+
+        box-shadow: 3px 3px 3px $prussian-blue,
+                    -3px 0px 3px $prussian-blue;
     }
 }

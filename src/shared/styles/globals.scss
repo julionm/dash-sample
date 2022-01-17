@@ -1,0 +1,21 @@
+$languid-lavender: #e8d7f1ff;
+$thistle: #d3bcccff;
+$glossy-grape: #ba92b9ff;
+$pearly-purple: #a167a5ff;
+$french-lilac: #8c5a97ff;
+$razzmic-berry: #764c89ff;
+$cyber-grapes: #4a306dff;
+$prussian-blue: #0e273cff;
+
+.page-content {
+    position: absolute;
+
+    margin: 55px 0 0 80px;
+
+    width: calc(100% - 80px);
+    height: calc(100% - 55px);
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+}

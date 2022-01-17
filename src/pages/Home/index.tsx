@@ -1,16 +1,25 @@
+import { useState } from 'react';
 import { Card } from '../../components/Card';
 import './styles.scss';
 
 export function HomePage() {
+
+    const [cardsList, setCardsList] = useState<number[]>(() => {
+        const list = localStorage.getItem('cards-order');
+
+        return list !== null ? JSON.parse(list) : [];
+    });
+
     return (
         <div className="home-content">
             <div className="welcome">Bem Vindo, Julio!</div>
             <div className="dashboard-container">
                 <div className="dashboard-content">
-                    <Card id={1} title="Titulo"></Card>
-                    <Card id={2} title="Teste"></Card>
-                    <Card id={3} title="TestTest"></Card>
-                    <Card id={4} title="olutiT"></Card>
+                    {
+                        cardsList.map((e,i) => (
+                            <Card id={e} title={`Titulo ${e}`} />
+                        ))
+                    }
                 </div>
             </div>
         </div>

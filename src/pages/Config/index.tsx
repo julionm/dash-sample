@@ -1,9 +1,12 @@
+import { CardSort } from '../../components/CardSort';
 import './styles.scss';
 
 export function ConfigPage() {
     return (
         <div className="config-content">
-            <span>TESTE TESTE</span>
+            <div className="page-title">Gestão da Aplicação</div>
+
+            <CardSort />
         </div>
     );
 }

@@ -1,0 +1,38 @@
+@import '/src/shared/styles/globals.scss';
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 500px;
+
+  .card-sorted {
+    height: 125px;
+
+    transition: .3s ease;
+
+    background: violet;
+
+    border: 1px solid grey;
+
+    float: left;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .drag-over {
+    background: darken(violet, 20%);
+  }
+
+  div:last-of-type {
+    cursor: pointer;
+    background: grey;
+  }
+}
+
+.card-sort {
+  margin: 15px;
+}
+
